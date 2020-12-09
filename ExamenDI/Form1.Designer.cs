@@ -87,6 +87,7 @@
             this.iNFORMESToolStripMenuItem.Name = "iNFORMESToolStripMenuItem";
             this.iNFORMESToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
             this.iNFORMESToolStripMenuItem.Text = "INFORMES";
+            this.iNFORMESToolStripMenuItem.Click += new System.EventHandler(this.iNFORMESToolStripMenuItem_Click);
             // 
             // sALIRToolStripMenuItem
             // 
@@ -102,6 +103,7 @@
             this.ClientSize = new System.Drawing.Size(800, 604);
             this.ControlBox = false;
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;

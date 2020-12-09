@@ -24,8 +24,7 @@ namespace ExamenDI
 
         private void sALIRToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 f = new Form1();
-            f.Close();
+            this.Close();
         }
 
         private void sociosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -46,6 +45,14 @@ namespace ExamenDI
             fReservas.MdiParent = this;
             fReservas.Dock = DockStyle.Fill;
             fReservas.Show();
+        }
+
+        private void iNFORMESToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormularioInformes fInformes = new FormularioInformes();
+            fInformes.MdiParent = this;
+            fInformes.Dock = DockStyle.Fill;
+            fInformes.Show();
         }
     }
 }
