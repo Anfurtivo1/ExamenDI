@@ -80,6 +80,7 @@
             this.rESERVASToolStripMenuItem.Name = "rESERVASToolStripMenuItem";
             this.rESERVASToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
             this.rESERVASToolStripMenuItem.Text = "RESERVAS";
+            this.rESERVASToolStripMenuItem.Click += new System.EventHandler(this.rESERVASToolStripMenuItem_Click);
             // 
             // iNFORMESToolStripMenuItem
             // 
@@ -98,9 +99,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 604);
             this.ControlBox = false;
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

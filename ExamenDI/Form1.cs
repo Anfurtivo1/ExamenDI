@@ -39,5 +39,13 @@ namespace ExamenDI
             FormularioPistas fpistas = new FormularioPistas();
             fpistas.ShowDialog();
         }
+
+        private void rESERVASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormularioReservas fReservas = new FormularioReservas();
+            fReservas.MdiParent = this;
+            fReservas.Dock = DockStyle.Fill;
+            fReservas.Show();
+        }
     }
 }
