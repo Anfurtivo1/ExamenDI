@@ -46,11 +46,27 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblDNI = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.dgvReservas = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pbFotoPista = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.nupMinuto = new System.Windows.Forms.NumericUpDown();
+            this.nudHora = new System.Windows.Forms.NumericUpDown();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cbPista = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReservas)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFotoPista)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupMinuto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudHora)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -221,16 +237,6 @@
             this.panel2.Size = new System.Drawing.Size(776, 172);
             this.panel2.TabIndex = 5;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(347, 146);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "PAGAR";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // dgvReservas
             // 
             this.dgvReservas.AllowUserToAddRows = false;
@@ -246,12 +252,144 @@
             this.dgvReservas.Size = new System.Drawing.Size(742, 125);
             this.dgvReservas.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(347, 146);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "PAGAR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Aqua;
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.pbFotoPista);
+            this.panel3.Controls.Add(this.label12);
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.nupMinuto);
+            this.panel3.Controls.Add(this.nudHora);
+            this.panel3.Controls.Add(this.label11);
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Controls.Add(this.dtpFecha);
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.cbPista);
+            this.panel3.Location = new System.Drawing.Point(12, 222);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(776, 153);
+            this.panel3.TabIndex = 6;
+            // 
+            // pbFotoPista
+            // 
+            this.pbFotoPista.BackColor = System.Drawing.Color.White;
+            this.pbFotoPista.Location = new System.Drawing.Point(465, 20);
+            this.pbFotoPista.Name = "pbFotoPista";
+            this.pbFotoPista.Size = new System.Drawing.Size(268, 79);
+            this.pbFotoPista.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbFotoPista.TabIndex = 20;
+            this.pbFotoPista.TabStop = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(462, 114);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(185, 17);
+            this.label12.TabIndex = 19;
+            this.label12.Text = "Duración: 1h 30 minutos";
+            // 
+            // button2
+            // 
+            this.button2.Enabled = false;
+            this.button2.Location = new System.Drawing.Point(347, 101);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(109, 43);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "RESERVAR";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // nupMinuto
+            // 
+            this.nupMinuto.Enabled = false;
+            this.nupMinuto.Location = new System.Drawing.Point(163, 122);
+            this.nupMinuto.Name = "nupMinuto";
+            this.nupMinuto.Size = new System.Drawing.Size(48, 22);
+            this.nupMinuto.TabIndex = 17;
+            // 
+            // nudHora
+            // 
+            this.nudHora.Enabled = false;
+            this.nudHora.Location = new System.Drawing.Point(95, 122);
+            this.nudHora.Name = "nudHora";
+            this.nudHora.Size = new System.Drawing.Size(48, 22);
+            this.nudHora.TabIndex = 16;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(13, 122);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(75, 17);
+            this.label11.TabIndex = 15;
+            this.label11.Text = "Hora inicio";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(13, 82);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(47, 17);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "Fecha";
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Enabled = false;
+            this.dtpFecha.Location = new System.Drawing.Point(72, 82);
+            this.dtpFecha.MinDate = new System.DateTime(2020, 12, 9, 0, 0, 0, 0);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(124, 22);
+            this.dtpFecha.TabIndex = 13;
+            this.dtpFecha.Value = new System.DateTime(2020, 12, 25, 23, 59, 59, 0);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(13, 32);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(39, 17);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "Pista";
+            // 
+            // cbPista
+            // 
+            this.cbPista.Enabled = false;
+            this.cbPista.FormattingEnabled = true;
+            this.cbPista.Location = new System.Drawing.Point(72, 29);
+            this.cbPista.Name = "cbPista";
+            this.cbPista.Size = new System.Drawing.Size(249, 24);
+            this.cbPista.TabIndex = 0;
+            this.cbPista.SelectedIndexChanged += new System.EventHandler(this.cbPista_SelectedIndexChanged);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(144, 124);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(13, 17);
+            this.label13.TabIndex = 12;
+            this.label13.Text = "-";
+            // 
             // FormularioReservas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 576);
             this.ControlBox = false;
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblDNI);
             this.Controls.Add(this.label2);
@@ -270,6 +408,11 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReservas)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFotoPista)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupMinuto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudHora)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,5 +440,17 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dgvReservas;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cbPista;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.NumericUpDown nupMinuto;
+        private System.Windows.Forms.NumericUpDown nudHora;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox pbFotoPista;
+        private System.Windows.Forms.Label label13;
     }
 }
