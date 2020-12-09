@@ -33,5 +33,11 @@ namespace ExamenDI
             FormularioSocios fSocios = new FormularioSocios();
             fSocios.ShowDialog();
         }
+
+        private void pistasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormularioPistas fpistas = new FormularioPistas();
+            fpistas.ShowDialog();
+        }
     }
 }

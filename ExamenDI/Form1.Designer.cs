@@ -73,6 +73,7 @@
             this.pistasToolStripMenuItem.Name = "pistasToolStripMenuItem";
             this.pistasToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.pistasToolStripMenuItem.Text = "Pistas";
+            this.pistasToolStripMenuItem.Click += new System.EventHandler(this.pistasToolStripMenuItem_Click);
             // 
             // rESERVASToolStripMenuItem
             // 
