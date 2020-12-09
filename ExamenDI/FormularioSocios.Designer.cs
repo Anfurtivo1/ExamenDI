@@ -28,28 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDNI = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtApellidos = new System.Windows.Forms.TextBox();
+            this.txtDomicilio = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.txtTelefono = new System.Windows.Forms.MaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.txtCuenta = new System.Windows.Forms.MaskedTextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.dgvSocios = new System.Windows.Forms.DataGridView();
+            this.button4 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSocios)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtDNI
             // 
-            this.textBox1.Location = new System.Drawing.Point(136, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 0;
+            this.txtDNI.Location = new System.Drawing.Point(136, 59);
+            this.txtDNI.Name = "txtDNI";
+            this.txtDNI.Size = new System.Drawing.Size(100, 22);
+            this.txtDNI.TabIndex = 0;
             // 
             // label1
             // 
@@ -60,26 +66,26 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "DNI";
             // 
-            // textBox2
+            // txtNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(136, 108);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 2;
+            this.txtNombre.Location = new System.Drawing.Point(136, 108);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 22);
+            this.txtNombre.TabIndex = 2;
             // 
-            // textBox3
+            // txtApellidos
             // 
-            this.textBox3.Location = new System.Drawing.Point(136, 158);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 3;
+            this.txtApellidos.Location = new System.Drawing.Point(136, 158);
+            this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.Size = new System.Drawing.Size(100, 22);
+            this.txtApellidos.TabIndex = 3;
             // 
-            // textBox4
+            // txtDomicilio
             // 
-            this.textBox4.Location = new System.Drawing.Point(136, 209);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 4;
+            this.txtDomicilio.Location = new System.Drawing.Point(136, 209);
+            this.txtDomicilio.Name = "txtDomicilio";
+            this.txtDomicilio.Size = new System.Drawing.Size(100, 22);
+            this.txtDomicilio.TabIndex = 4;
             // 
             // label2
             // 
@@ -108,12 +114,12 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Domicilio";
             // 
-            // textBox5
+            // txtEmail
             // 
-            this.textBox5.Location = new System.Drawing.Point(136, 258);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 8;
+            this.txtEmail.Location = new System.Drawing.Point(136, 258);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(100, 22);
+            this.txtEmail.TabIndex = 8;
             // 
             // label5
             // 
@@ -124,13 +130,13 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Email";
             // 
-            // maskedTextBox2
+            // txtTelefono
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(136, 356);
-            this.maskedTextBox2.Mask = "000-000-0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(100, 22);
-            this.maskedTextBox2.TabIndex = 11;
+            this.txtTelefono.Location = new System.Drawing.Point(136, 356);
+            this.txtTelefono.Mask = "000-000-0000";
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(100, 22);
+            this.txtTelefono.TabIndex = 11;
             // 
             // label6
             // 
@@ -150,36 +156,92 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "Telefono";
             // 
-            // maskedTextBox1
+            // txtCuenta
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(131, 309);
-            this.maskedTextBox1.Mask = "LL000-0000.0000.000.0000000000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(325, 22);
-            this.maskedTextBox1.TabIndex = 14;
-            this.maskedTextBox1.Text = "ES";
+            this.txtCuenta.Location = new System.Drawing.Point(131, 309);
+            this.txtCuenta.Mask = "LL000-0000.0000.000.0000000000";
+            this.txtCuenta.Name = "txtCuenta";
+            this.txtCuenta.Size = new System.Drawing.Size(325, 22);
+            this.txtCuenta.TabIndex = 14;
+            this.txtCuenta.Text = "ES";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(541, 52);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Insertar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(541, 104);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(84, 23);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Modificar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(541, 149);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "Eliminar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // dgvSocios
+            // 
+            this.dgvSocios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSocios.Location = new System.Drawing.Point(756, 52);
+            this.dgvSocios.Name = "dgvSocios";
+            this.dgvSocios.RowTemplate.Height = 24;
+            this.dgvSocios.Size = new System.Drawing.Size(525, 326);
+            this.dgvSocios.TabIndex = 18;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(541, 205);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 53);
+            this.button4.TabIndex = 19;
+            this.button4.Text = "Mostrar todos";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // FormularioSocios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.maskedTextBox1);
+            this.ClientSize = new System.Drawing.Size(1303, 450);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.dgvSocios);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtCuenta);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtDomicilio);
+            this.Controls.Add(this.txtApellidos);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDNI);
             this.Name = "FormularioSocios";
             this.Text = "FormularioSocios";
+            this.Load += new System.EventHandler(this.FormularioSocios_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSocios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,19 +249,24 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDNI;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtApellidos;
+        private System.Windows.Forms.TextBox txtDomicilio;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox txtTelefono;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox txtCuenta;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridView dgvSocios;
+        private System.Windows.Forms.Button button4;
     }
 }
